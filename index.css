@@ -5,19 +5,27 @@ html, body {
 }
 
 body {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
     font-family: 'Roboto', serif;
     background-image: url("https://sun9-87.userapi.com/impf/hrdY70aF_uLYBIsnT0Vwl3kHF8CoTp6us8CmDQ/Ujw5H3TjXkI.jpg?size=2560x1707&quality=96&sign=a269484715a92d13452ea16becde5b5c&type=album");
     background-position: center;
     background-size: 100%;
+    margin: 0;
+    height: 100%;
 }
 
 ul {
     text-align:  center;
     list-style-type: none;
+    padding: 1em 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 1em;
+}
+
+li:last-child {
+    margin-bottom: 0;
 }
 
 a {
@@ -27,5 +35,20 @@ a {
 mark {
     background-color: white;
     padding: 2px 5px;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+@media (min-width: 480px) {
+    ul {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
 }
 
